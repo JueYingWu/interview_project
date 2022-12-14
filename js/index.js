@@ -158,21 +158,23 @@ $("#payment").on('keydown keyup keypress change focus blur',function(){
 document.addEventListener("click", function(e){
 
     if( e.target.classList.contains("btn") ){
-
+        
+        // console.log(e.target);
+        
         e.preventDefault();
         
-        console.log(sendData);
+        // console.log(sendData);
         
         $("#submitBtn").css("display", "none");
         
         if( sendData == true ){
-            console.log("Y");
+            // console.log("Y");
             // $(this).siblings($("#failureBtn")).css("display", "none");
             // $(this).siblings($("#successBtn")).css("display", "block");
             $("#successBtn").css("display", "block");
             $("#failureBtn").css("display", "none");
         }else{
-            console.log("N");
+            // console.log("N");
             // $(this).siblings($("#successBtn")).css("display", "none");
             // $(this).siblings($("#failureBtn")).css("display", "block");
             $("#failureBtn").css("display", "block");
